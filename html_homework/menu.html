@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>展示内容</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 20px;
+            color: #f4f1de;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        background-image:linear-gradient(to right, #1face4, #16be7e);
+        }
+        .shell{
+            display: flex;
+            justify-content: center;
+        }
+        .button,.portrait{
+            background-color: #50536e;
+            width: 170px;
+            height: 65px;
+            text-align: center;
+            line-height: 65px;
+            transition: .3s;
+            cursor: pointer;
+        }
+        .portrait::before{
+            content: '';
+            display: block;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            transform: translate(30px,-30px);
+            background-image: url('./portrait.png');
+            background-size: cover;
+            border: 10px solid #fff;
+        }
+        .information{
+            width: 220px;
+            background-color: #5fe0a4;
+            transform: translate(-20px,-200px);
+            border-radius: 10px;
+            padding: 20px 0;
+            line-height: 0;
+            height: 0;
+            transition: .3s;
+            opacity: 0;
+            
+        }
+        .button:hover{
+            background-color: #39d17d;
+        }
+        .button li:hover{
+            background-color: #9dffd6;
+        }
+        .button ul li{
+            height: 0;
+            transition: .2s;
+            opacity: 0;
+            transform: translateY(-65px);
+            background-color: #5fe09f;
+        }
+        .button:hover li{
+            height: 65px;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .portrait:hover .information{
+            opacity: 1;
+            line-height: 65px;
+            transform: translate(-20px,-10px);
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="shell">
+        <li class="button">
+            <span>关系图</span>
+            <ul>
+                <li><a href="img/connection of CS's classes.png">关系图</a></li>
+            </ul>
+        </li>
+        <li class="button">
+            <span>参考资料</span>
+            <ul>
+                <li><a href="https://blog.csdn.net/TeFuirnever/article/details/99734084?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522164205866216780265420802%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=164205866216780265420802&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~rank_v31_ecpm-3-99734084.first_rank_v2_pc_rank_v29&utm_term=%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AD%A6%E7%A7%91%E5%90%84%E8%AF%BE%E7%A8%8B%E6%9C%89%E7%94%A8%E7%9A%84%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99&spm=1018.2226.3001.4187"target="_blank">网页</a></li>
+                <li><a href="https://bb.xjtu.edu.cn/bbcswebdav/pid-370259-dt-content-rid-4117021_1/xid-4117021_1">PPT</a></li>
+            </ul>
+        <li class="button">
+            <span>计算机专业认识</span>
+            <ul>
+                <li><a href="opinion about CS.html">认识</form> </li>
+            </ul>
+        </li>
+        <li class="button">
+            <span>学业规划</span>
+            <ul>
+                <li><a href="opinion about CS.html">学业规划</form> </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>
